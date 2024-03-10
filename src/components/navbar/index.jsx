@@ -190,6 +190,8 @@ const Navbar = () => {
             </ul> */}
             <button className='text-[1.1rem] p-2 mt-5 bg-green-200 text-green-600' onClick={read}>Click</button>
 
+            {/* Use Ref Section */}
+
             <div>
                 <h1>Count : {count}</h1>
                 <h1>Count Ref : {countRef.current}</h1>
@@ -201,6 +203,8 @@ const Navbar = () => {
                 <h1 className='text-[1.5rem] text-pink-800'>Use Ref For Input</h1>
                 <input ref={inputRef} type="text" className='text-[1.3rem] border-2 p-3 ' placeholder='Type something...' />
             </div>
+
+            {/* Use Ref Section Ended */}
 
 
         </div>
