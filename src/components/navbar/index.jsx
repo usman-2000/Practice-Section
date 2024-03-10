@@ -106,8 +106,12 @@ const Navbar = () => {
         countRef.current++;
 
         console.log("Count : ", count);
-        console.log("Ref : ", countRef);
+        console.log("Ref : ", countRef.current);
     }
+
+
+    console.log("Count : ", count);
+    console.log("Ref : ", countRef.current);
 
 
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -179,6 +183,11 @@ const Navbar = () => {
                 })}
             </ul> */}
             <button onClick={read}>Click</button>
+
+            <div>
+                <h1>Count : {count}</h1>
+                <button onClick={handleCount}>Increment</button>
+            </div>
 
 
         </div>
