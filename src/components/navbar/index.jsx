@@ -102,8 +102,8 @@ const Navbar = () => {
     const countRef = useRef(0)
 
     const handleCount = () => {
-        setCount(count + 1)
         countRef.current++;
+        setCount(countRef.current)
 
         console.log("Count : ", count);
         console.log("Ref : ", countRef.current);
