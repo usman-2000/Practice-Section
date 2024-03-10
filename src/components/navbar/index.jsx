@@ -101,6 +101,8 @@ const Navbar = () => {
     const [count, setCount] = useState(0)
     const countRef = useRef(0)
 
+    const inputRef = useRef(null)
+
     const handleCount = () => {
         setCount(count + 1)
         countRef.current++;
@@ -112,6 +114,10 @@ const Navbar = () => {
 
     console.log("Count : ", count);
     console.log("Ref : ", countRef.current);
+
+    useEffect(() => {
+        inputRef.current.focus()
+    }, [])
 
 
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -189,6 +195,11 @@ const Navbar = () => {
                 <h1>Count Ref : {countRef.current}</h1>
 
                 <button onClick={handleCount}>Increment</button>
+            </div>
+
+            <div className='mt-4'>
+                <h1 className='text-[1.5rem] text-pink-800'>Use Ref For Input</h1>
+                <input ref={inputRef} type="text" className='text-[1.3rem] border-2 p-3 ' placeholder='Type something...' />
             </div>
 
 
