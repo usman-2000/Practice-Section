@@ -188,13 +188,13 @@ const Navbar = () => {
                     return <li>Already Read {i.title} by {i.author}</li>
                 })}
             </ul> */}
-            <button onClick={read}>Click</button>
+            <button className='text-[1.1rem] p-2 mt-5 bg-green-200 text-green-600' onClick={read}>Click</button>
 
             <div>
                 <h1>Count : {count}</h1>
                 <h1>Count Ref : {countRef.current}</h1>
 
-                <button onClick={handleCount}>Increment</button>
+                <button className='text-[1.1rem] p-2 mt-5 bg-green-200 text-green-600' onClick={handleCount}>Increment</button>
             </div>
 
             <div className='mt-4'>
