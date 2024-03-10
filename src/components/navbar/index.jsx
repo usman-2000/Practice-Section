@@ -92,6 +92,13 @@ const Navbar = () => {
     // }
 
 
+    //////////////////////////////////////////////////////////////////
+    //////////////////////// USE REF /////////////////////////////////
+    //////////////////////////////////////////////////////////////////
+
+    // use ref is somthing like states in react but it doesn't re reder the component. It is not used in the return value of the component.
+
+
     var library = [
         {
             title: 'Bill Gates',
