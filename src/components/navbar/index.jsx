@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import "./styles.css"
 const Navbar = () => {
     // const [list1, setList1] = useState([{
@@ -98,6 +98,23 @@ const Navbar = () => {
 
     // use ref is somthing like states in react but it doesn't re reder the component. It is not used in the return value of the component.
 
+    const [count, setCount] = useState(0)
+    const countRef = useRef(0)
+
+    const handleCount = () => {
+        setCount(count + 1)
+        countRef.current++;
+
+        console.log("Count : ", count);
+        console.log("Ref : ", countRef);
+    }
+
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 
     var library = [
         {
@@ -162,6 +179,8 @@ const Navbar = () => {
                 })}
             </ul> */}
             <button onClick={read}>Click</button>
+
+
         </div>
     )
 }
