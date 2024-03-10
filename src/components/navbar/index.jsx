@@ -96,14 +96,14 @@ const Navbar = () => {
     //////////////////////// USE REF /////////////////////////////////
     //////////////////////////////////////////////////////////////////
 
-    // use ref is somthing like states in react but it doesn't re reder the component. It is not used in the return value of the component.
+    // use ref is somthing like states in react but it doesn't re reder the component. It is not used in the return value of the component. ref doesn't need to rerender for updating states as it updates its state instantly when it called. So when if you need to rerender the state , then you can use useState, otherwise use ref is the best option.
 
     const [count, setCount] = useState(0)
     const countRef = useRef(0)
 
     const handleCount = () => {
+        setCount(count + 1)
         countRef.current++;
-        setCount(countRef.current)
 
         console.log("Count : ", count);
         console.log("Ref : ", countRef.current);
@@ -186,6 +186,8 @@ const Navbar = () => {
 
             <div>
                 <h1>Count : {count}</h1>
+                <h1>Count Ref : {countRef.current}</h1>
+
                 <button onClick={handleCount}>Increment</button>
             </div>
 
