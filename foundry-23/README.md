@@ -69,5 +69,7 @@ $ cast --help
 ## For Installing OpenZeppelin contracts
 
 ```shell
-
+$ forge install openzeppelin/openzeppelin-contracts
 ```
+
+After that create a remappings for this.
