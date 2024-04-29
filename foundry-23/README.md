@@ -73,3 +73,10 @@ $ forge install openzeppelin/openzeppelin-contracts
 ```
 
 After that create a remappings for this.
+
+## For Remappings
+
+```shell
+$ forge remappings > remappings.txt
+```
+
