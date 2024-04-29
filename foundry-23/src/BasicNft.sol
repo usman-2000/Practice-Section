@@ -11,7 +11,7 @@ contract BasicNFT is ERC721{
         t_counter = 0;
     }
 
-    function mintNft(type name) {
+    function mintNft() public {
         
     }
 }
